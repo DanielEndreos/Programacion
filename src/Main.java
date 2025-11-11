@@ -1,6 +1,4 @@
 import ejercicios.*;
-import enums.TipoFile;
-
 import java.util.Scanner;
 
 public class Main {
@@ -13,20 +11,8 @@ public class Main {
 //      EjerciciosT3 eT3 = new EjerciciosT3(); // Llamada a Ejercicios T3
 //      EjerciciosSwitchFor eSF = new EjerciciosSwitchFor(); // Llamada a Ejercicios SwitchFor
 //      EjerciciosWhileDoWhile eWdW = new EjerciciosWhileDoWhile(); //Llamada a Ejercicios WhileDoWhile
-        MPO mpo = new MPO();
-        EjerciciosOpe eOpe = new EjerciciosOpe();
+        EjerciciosMPO eMPO = new EjerciciosMPO();
 
-<<<<<<< Updated upstream
-        //eOpe.ejercicioOpe2(scn);
-=======
-
-        //eOpe.ejercicioOpe2(scn);
-        // eOpe.ejercicioOpe3(scn);
-        //eOpe.ejercicioOpe4(scn);
-        //eOpe.ejercicioOpe5(scn);
-
->>>>>>> Stashed changes
-        // Ejercicios T1
         /*
 //      eT1.ejercicio1T1();
 //      eT1.ejercicio2T1();
@@ -98,16 +84,18 @@ public class Main {
 //        eWdW.ejercicio10WdW(scn);
         */
 
+        // MPO
 
-
-
-
-        mpo.ejercicio10(scn);
-
-
-
-
-
+//        eMPO.ejercicioMPO1(scn);
+//        eMPO.ejercicioMPO2(scn);
+//        eMPO.ejercicioMPO3(scn);
+//        eMPO.ejercicioMPO4(scn);
+//        eMPO.ejercicioMPO5(scn);
+//        eMPO.ejercicioMPO6(scn);
+//        eMPO.ejercicioMPO7(scn);
+//        eMPO.ejercicioMPO8(scn);
+//        eMPO.ejercicioMPO9(scn);
+//        eMPO.ejercicioMPO10(scn);
 
 
         scn.close(); // Cierre Scanner
