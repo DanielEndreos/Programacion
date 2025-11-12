@@ -12,7 +12,7 @@ public class Main {
 //      EjerciciosSwitchFor eSF = new EjerciciosSwitchFor(); // Llamada a Ejercicios SwitchFor
 //      EjerciciosWhileDoWhile eWdW = new EjerciciosWhileDoWhile(); //Llamada a Ejercicios WhileDoWhile
         EjerciciosMPO eMPO = new EjerciciosMPO();
-
+        eMPO.ejercicioMPO1(scn);
         /*
 //      eT1.ejercicio1T1();
 //      eT1.ejercicio2T1();

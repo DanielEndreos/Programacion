@@ -14,7 +14,17 @@ public class EjerciciosMPO {
         //Usa un switch para convertir la calificación a una letra (A, B, C, D, F).
         //Considera: 9-10 = A, 7-8.9 = B, 5-6.9 = C, 4-4.9 = D, 0-3.9 = F
         //Muestra un mensaje apropiado para cada calificación.
-
+        
+        double calificacion = 10;
+        
+        switch(calificacion){
+            case double n when (n>= 0 && n <=3.9) -> {System.out.println("F");}
+            case double n when (n>= 4 && n <=4.9) -> {System.out.println("D");}
+            case double n when (n>= 5 && n <=6.9) -> {System.out.println("C");}
+            case double n when (n>= 7 && n <=8.9) -> {System.out.println("B");}
+            case double n when (n>= 9 && n <=10)  -> {System.out.println("A");}
+            default -> throw new IllegalStateException("Unexpected value: " + calificacion);
+        }
 
     }
 
