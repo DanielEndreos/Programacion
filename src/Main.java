@@ -11,8 +11,8 @@ public class Main {
 //      EjerciciosT3 eT3 = new EjerciciosT3(); // Llamada a Ejercicios T3
 //      EjerciciosSwitchFor eSF = new EjerciciosSwitchFor(); // Llamada a Ejercicios SwitchFor
 //      EjerciciosWhileDoWhile eWdW = new EjerciciosWhileDoWhile(); //Llamada a Ejercicios WhileDoWhile
-        EjerciciosMPO eMPO = new EjerciciosMPO();
-        eMPO.ejercicioMPO1(scn);
+//        EjerciciosMPO eMPO = new EjerciciosMPO();
+//        eMPO.ejercicioMPO1(scn);
         /*
 //      eT1.ejercicio1T1();
 //      eT1.ejercicio2T1();

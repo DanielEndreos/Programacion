@@ -16,7 +16,7 @@ public class EjerciciosMPO {
         //Muestra un mensaje apropiado para cada calificación.
         
         double calificacion = 10;
-        
+/*
         switch(calificacion){
             case double n when (n>= 0 && n <=3.9) -> {System.out.println("F");}
             case double n when (n>= 4 && n <=4.9) -> {System.out.println("D");}
@@ -25,7 +25,7 @@ public class EjerciciosMPO {
             case double n when (n>= 9 && n <=10)  -> {System.out.println("A");}
             default -> throw new IllegalStateException("Unexpected value: " + calificacion);
         }
-
+*/
     }
 
     public void ejercicioMPO2(Scanner scn){
