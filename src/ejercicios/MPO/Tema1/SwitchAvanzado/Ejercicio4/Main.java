@@ -1,6 +1,6 @@
 package ejercicios.MPO.Tema1.SwitchAvanzado.Ejercicio4;
 
-import enums.CateogriaPlato;
+import enums.CategoriaPlato;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Main {
         System.out.print("¿Que quieres saber del menú (Entrada / Principal / Bebida / Postre? ");
         String categoria = scn.next().toUpperCase();
 
-        switch(CateogriaPlato.valueOf(categoria)){
+        switch(CategoriaPlato.valueOf(categoria)){
             case ENTRADA -> {
                 System.out.println("Croquetas de Jamón");
                 System.out.println("Croquetas de Salmón");

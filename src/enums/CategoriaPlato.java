@@ -1,5 +1,5 @@
 package enums;
 
-public enum CateogriaPlato {
+public enum CategoriaPlato {
     ENTRADA, PRINCIPAL, POSTRE, BEBIDA;
 }
