@@ -1,5 +1,6 @@
 ### IntelliJ IDEA ###
 FP-Programacion/out/
+out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
