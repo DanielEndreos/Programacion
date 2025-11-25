@@ -39,14 +39,15 @@ public class Main {
             return 30.0;
         } else if (cantidad > 50) {
             return 20.0;
-        } else (cantidad > 20){
+        } else if (cantidad > 20){
             return 10.0;
-        } else{
+        } else {
             return 0.0;
         }
     }
 
     static public void procesarPedidos(String[] productos, int[] cantidades, double[] precios){
-        verificarStock()
+
+
     }
 }
