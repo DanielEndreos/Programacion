@@ -3,7 +3,7 @@ package ejercicios.Programacion.Tema4.Arrays.Ejercicio10;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
+public class Main_todo {
     public static void main(String[] args) {
         /*
         Desarrolla un programa que pida al usuario cuántos estudiantes hay en una clase.
