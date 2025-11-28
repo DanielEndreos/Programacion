@@ -1,4 +1,4 @@
-package ejercicios.Programacion.Tema4.Arrays.Ejercicio9;
+package ejercicios.Programacion.Tema4._0_ArraysUnidimensionales.Ejercicio9;
 
 import java.util.Arrays;
 

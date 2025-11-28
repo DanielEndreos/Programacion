@@ -1,4 +1,4 @@
-package ejercicios.Programacion.Tema4.Arrays.Ejercicio2;
+package ejercicios.Programacion.Tema4._0_ArraysUnidimensionales.Ejercicio2;
 
 public class Main {
     public static void main(String[] args) {

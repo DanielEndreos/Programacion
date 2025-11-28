@@ -1,4 +1,4 @@
-package ejercicios.Programacion.Tema4.Arrays.Ejercicio3;
+package ejercicios.Programacion.Tema4._0_ArraysUnidimensionales.Ejercicio3;
 
 import java.util.Scanner;
 

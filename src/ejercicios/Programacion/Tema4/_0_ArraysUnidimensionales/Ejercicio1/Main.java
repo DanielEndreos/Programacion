@@ -1,4 +1,4 @@
-package ejercicios.Programacion.Tema4.Arrays.Ejercicio1;
+package ejercicios.Programacion.Tema4._0_ArraysUnidimensionales.Ejercicio1;
 
 public class Main {
 
