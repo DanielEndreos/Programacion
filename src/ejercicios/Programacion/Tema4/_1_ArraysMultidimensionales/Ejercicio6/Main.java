@@ -2,7 +2,7 @@ package ejercicios.Programacion.Tema4._1_ArraysMultidimensionales.Ejercicio6;
 
 public class Main {
     public static void main(String[] args) {
-        /*TODO
+        /*
         Ejercicio 6: Encontrar el mayor elemento de cada columna
 
         Escribe un programa que cree una matriz de 3x4 con números.

@@ -1,8 +1,10 @@
 package ejercicios.Programacion.Tema4._1_ArraysMultidimensionales.Ejercicio8;
 
+import Metodos.CtrlMatriz;
+
 public class Main {
     public static void main(String[] args) {
-        /*TODO
+        /*
         Ejercicio 8: Contar números pares e impares en una matriz
 
         Desarrolla un programa que cree una matriz de 4x5 con números enteros.
@@ -19,5 +21,21 @@ public class Main {
         Números pares: 11
         Números impares: 9
          */
+
+        int[][] matriz = new int[4][5];
+        int pares = 0, impares = 0;
+
+        CtrlMatriz.buildToInt(matriz,false, 40,false);
+
+        for (int[] fila : matriz ) {
+            for (int value : fila) {
+                pares += (value%2)==0?1:0;
+                impares += (value%2)!=0?1:0;
+            }
+        }
+        System.out.printf("""
+                \nNúmeros pares: %d
+                Números impares: %d
+                """, pares, impares);
     }
 }

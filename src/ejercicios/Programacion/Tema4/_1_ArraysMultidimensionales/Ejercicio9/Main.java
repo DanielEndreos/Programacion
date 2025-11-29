@@ -1,5 +1,7 @@
 package ejercicios.Programacion.Tema4._1_ArraysMultidimensionales.Ejercicio9;
 
+import Metodos.CtrlMatriz;
+
 public class Main {
     public static void main(String[] args) {
     /*TODO
@@ -24,5 +26,12 @@ public class Main {
     9   18  27  36  45  54  63  72  81  90
     10  20  30  40  50  60  70  80  90  100
      */
+    int[][] matriz = new int[10][10];
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = (i+1)*(j+1);
+            }
+        }
+        CtrlMatriz.displayFromInt(matriz, "Tabla de multiplicar (10x10): ");
     }
 }
