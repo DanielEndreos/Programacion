@@ -21,7 +21,7 @@ public final class CtrlMatriz {
      * @param maxRandNumb   Valor máximo aleatorio (excluido)
      * @param repetible     Si true, permite números repetidos
      */
-    public static void buildToInt(int[][] matriz, boolean includeZero, int maxRandNumb, boolean repetible){
+    public static void buildToInt(int[][] matriz, boolean includeZero, int maxRandNumb, boolean repetible, String headerTabla){
         int matrizDimension = (matriz.length)*(matriz[0].length);
         int qtyNumbersForRandomize = maxRandNumb;
         int start = includeZero?0:1;
@@ -39,12 +39,12 @@ public final class CtrlMatriz {
                     int tempNumb;
                     do{
                         tempNumb = (int)(Math.random()*qtyNumbersForRandomize)+start;
-                    }while(busquedaValorInt(matriz, tempNumb));
+                    }while(busquedaValorInt(matriz, tempNumb, i, j));
                     matriz[i][j] = tempNumb;
                 }
             }
         }
-        displayFromInt(matriz,"Matriz: ");
+        displayFromInt(matriz, headerTabla);
     }
 
     /**
@@ -57,7 +57,7 @@ public final class CtrlMatriz {
      * @param repetible     Si true, permite números repetidos
      * @param decimales     Número de decimales a redondear
      */
-    public static void buildToDouble(double[][] matriz, boolean includeZero, double maxRandNumb, boolean repetible, int decimales){
+    public static void buildToDouble(double[][] matriz, boolean includeZero, double maxRandNumb, boolean repetible, int decimales, String headerTabla){
         int matrizDimension = (matriz.length)*(matriz[0].length);
         double qtyNumbersForRandomize = maxRandNumb;
         double redondeo = 1;
@@ -80,12 +80,12 @@ public final class CtrlMatriz {
                     double tempNumb;
                     do{
                         tempNumb = Math.round(((Math.random()*qtyNumbersForRandomize)+start)*redondeo)/redondeo;
-                    }while(busquedaValorDouble(matriz, tempNumb));
+                    }while(busquedaValorDouble(matriz, tempNumb, i, j));
                     matriz[i][j] = tempNumb;
                 }
             }
         }
-        displayFromDouble(matriz,"Matriz: ");
+        displayFromDouble(matriz, headerTabla);
     }
 
     public static void displayFromInt(int[][] matriz, String headerTabla){
@@ -128,24 +128,38 @@ public final class CtrlMatriz {
         }
     }
 
-    public static boolean busquedaValorInt(int[][] matriz, int numBusq){
-
-        for (int[] fila : matriz) {
-            for (int valor : fila ) {
-                if (valor==numBusq){
-                    return true;
+    public static boolean busquedaValorInt(int[][] matriz, int numBusq, int iPtr, int jPtr){
+        for (int i = 0; i <= iPtr ; i++) {
+            if (i == iPtr){
+                for (int j = 0; j < jPtr; j++) {
+                    if (numBusq == matriz[i][j]){
+                        return true;
+                    }
+                }
+            } else{
+                for (int j = 0; j < matriz[0].length; j++) {
+                    if (numBusq == matriz[i][j]){
+                        return true;
+                    }
                 }
             }
         }
-    return false;
+        return false;
     }
 
-    public static boolean busquedaValorDouble(double[][] matriz, double numBusq){
-
-        for (double[] fila : matriz) {
-            for (double valor : fila ) {
-                if (valor==numBusq){
-                    return true;
+    public static boolean busquedaValorDouble(double[][] matriz, double numBusq, int iPtr, int jPtr){
+        for (int i = 0; i <= iPtr ; i++) {
+            if (i == iPtr){
+                for (int j = 0; j < jPtr; j++) {
+                    if (numBusq == matriz[i][j]){
+                        return true;
+                    }
+                }
+            } else{
+                for (int j = 0; j < matriz[0].length; j++) {
+                    if (numBusq == matriz[i][j]){
+                        return true;
+                    }
                 }
             }
         }
