@@ -40,30 +40,18 @@ public class Main {
                     }
                 }
                 case "b" -> {
-                    int value = 0;
-                    for (int i = 0; i < array.length ; i++) {
-                        if (i == 0){
-                            value = array[i];
-                        } else if (i == array.length-1) {
-                            array[i-1] = array[i];
-                            array[i] = value;
-                        } else{
-                            array[i-1] = array[i];
-                        }
+                    int value = array[0];
+                    for (int i = 0; i < array.length-1 ; i++) {
+                        array[i] = array[i+1];
                     }
+                    array[array.length-1] = value;
                 }
                 case "c" -> {
-                    int value = 0;
-                    for (int i = array.length-1; i >= 0 ; i--) {
-                        if (i == array.length-1){
-                            value = array[i];
+                    int value = array[array.length-1];
+                    for (int i = array.length-1; i > 0 ; i--) {
                             array[i] = array[i-1];
-                        } else if (i == 0) {
-                            array[i] = value;
-                        } else{
-                            array[i] = array[i-1];
-                        }
                     }
+                    array[0]=value;
                 }
                 case "d" -> {
                     for (int i = 0; i < array.length; i++) {

@@ -27,17 +27,17 @@ public class Main {
 
         for (int i = 0; i < notasAlumnos.length; i++) {
             do{
-            System.out.printf("Introduce la nota del alumno %d: ", i+1);
-            notasAlumnos[i] = scn.nextDouble();
+                System.out.printf("Introduce la nota del alumno %d: ", i+1);
+                notasAlumnos[i] = scn.nextDouble();
             }while(notasAlumnos[i]<0.0 || notasAlumnos[i]>10.0);
-         sumaNotas += notasAlumnos[i];
-         if (i > 0){
-             notaAlta = notaAlta > notasAlumnos[i]?notaAlta:notasAlumnos[i];
-             notaBaja = notaBaja < notasAlumnos[i]?notaBaja:notasAlumnos[i];
-         } else{
-             notaBaja = notaAlta = notasAlumnos[i];
-         }
-         aprobados += notasAlumnos[i]>=5.0?1:0;
+            sumaNotas += notasAlumnos[i];
+            if (i > 0){
+                notaAlta = notaAlta > notasAlumnos[i]?notaAlta:notasAlumnos[i];
+                notaBaja = notaBaja < notasAlumnos[i]?notaBaja:notasAlumnos[i];
+            } else{
+                notaBaja = notaAlta = notasAlumnos[i];
+            }
+            aprobados += notasAlumnos[i]>=5.0?1:0;
         }
 
         System.out.printf("""
