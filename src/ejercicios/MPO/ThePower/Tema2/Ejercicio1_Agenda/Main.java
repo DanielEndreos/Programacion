@@ -2,7 +2,6 @@ package ejercicios.MPO.ThePower.Tema2.Ejercicio1_Agenda;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.function.ObjIntConsumer;
 import java.util.function.Predicate;
 
 public class Main {
@@ -36,7 +35,7 @@ public class Main {
                 case 1 ->{addContacto(agenda, scn);}
                 case 2 ->{buscarContacto(agenda, scn);}
                 case 3 ->{eliminarContacto(agenda, scn);}
-                case 4 ->{listarContactos(agenda, scn);}
+                case 4 ->{listarContactos(agenda);}
             };
         }while(opcion!=5);
     }
@@ -67,7 +66,7 @@ public class Main {
         int posicion = busqueda(iAgenda, dniBusq);
 
         if (posicion == -1){
-            System.out.println("Persona no encontrada.");
+            comprobarParecidos(iAgenda, dniBusq);
         } else{
             System.out.println("\nPersona encontrada: ");
             System.out.printf("Nombre: %s, Apellido: %s, Teléfono: %d\n", iAgenda.get(posicion)[0],iAgenda.get(posicion)[1],(int)iAgenda.get(posicion)[2]);
@@ -99,17 +98,6 @@ public class Main {
             comprobarParecidos(iAgenda, dniRemove);
         }
     }
-    public static void listarContactos(ArrayList<Object[]> iAgenda, Scanner iScanner){
-
-        if (iAgenda.size()!=0){
-            System.out.println("\nLista de personas:");
-            for (Object[] contactoAgenda : iAgenda) {
-                System.out.printf("%s -> Nombre: %s, Apellido: %s, Teléfono: %d, DNI: %s\n", iAgenda.indexOf(contactoAgenda), contactoAgenda[0],contactoAgenda[1],(int)contactoAgenda[2], contactoAgenda[3] );
-            }
-        }else{
-            System.out.println("\nNo hay personas en la agenda.");
-        }
-    }
     public static void comprobarParecidos(ArrayList<Object[]> iAgenda, String iDNI){
         boolean existe = false;
         for (int i = 0; i < iAgenda.size(); i++) {
@@ -120,7 +108,7 @@ public class Main {
         }
 
         if (existe){
-            System.out.println("No se ha encontrado el usuario a borrar. ");
+            System.out.println("No se ha encontrado el usuario. ");
             System.out.printf("Existen usuarios que contienen '%s': \n",iDNI);
             for (int i = 0; i < iAgenda.size(); i++) {
                 if(iAgenda.get(i)[3].toString().contains(iDNI)){
@@ -128,9 +116,20 @@ public class Main {
                 }
             }
         } else {
-            System.out.println("Persona no encontrada en la lista.");
+            System.out.println("Persona no encontrada.");
         }
 
+    }
+    public static void listarContactos(ArrayList<Object[]> iAgenda){
+
+        if (iAgenda.size()!=0){
+            System.out.println("\nLista de personas:");
+            for (Object[] contactoAgenda : iAgenda) {
+                System.out.printf("%s -> Nombre: %s, Apellido: %s, Teléfono: %d, DNI: %s\n", iAgenda.indexOf(contactoAgenda), contactoAgenda[0],contactoAgenda[1],(int)contactoAgenda[2], contactoAgenda[3] );
+            }
+        }else{
+            System.out.println("\nNo hay personas en la agenda.");
+        }
     }
 
 }
