@@ -1,7 +1,6 @@
 package ejercicios.MPO.Clase.Tema5;
 
 import java.util.ArrayList;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.function.Predicate;
 
 public class Main {
