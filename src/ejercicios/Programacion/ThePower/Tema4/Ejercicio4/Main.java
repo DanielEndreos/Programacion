@@ -1,7 +1,5 @@
 package ejercicios.Programacion.ThePower.Tema4.Ejercicio4;
 
-import Metodos.CtrlMatriz;
-
 public class Main {
 
 

@@ -1,4 +1,4 @@
-package Metodos;
+package metodos;
 /**
  * Imprime una matriz por consola.
  *

@@ -1,6 +1,6 @@
 package ejercicios.Programacion.ThePower.Tema4.Ejercicio1;
 
-import Metodos.CtrlMatriz;
+import metodos.CtrlMatriz;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
 package ejercicios.Programacion.Notion.Tema4._1_ArraysMultidimensionales.Ejercicio9;
 
-import Metodos.CtrlMatriz;
+import metodos.CtrlMatriz;
 
 public class Main {
     public static void main(String[] args) {
