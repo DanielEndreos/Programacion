@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-
+/*
     public static void main(String[] args) {
         int size = 9;
 
@@ -172,5 +172,5 @@ public class Main {
         }
         return true;
     }
-
+*/
 }

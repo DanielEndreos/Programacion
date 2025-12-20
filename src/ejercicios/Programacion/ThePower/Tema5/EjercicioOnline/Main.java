@@ -25,6 +25,8 @@ public class Main {
 
         //Opción A
         Alumno marcos = new Alumno(programacion, sistemas, entornos);
+        Alumno noelia = new Alumno(programacion, sistemas, entornos);
+        Alumno susan = new Alumno(programacion, sistemas, entornos);
 
         //Opción B
         Alumno celia = new Alumno(1,2,3);
@@ -43,6 +45,8 @@ public class Main {
 
 //        Profesor profesor = new Profesor();
 //        Colegio colegio = new Colegio(profesor);
+
+
 //        colegio.matricularAlumno(new Alumno(1,2,3));
 //        colegio.matricularAlumno(new Alumno(1,2,3));
 //        colegio.matricularAlumno(new Alumno(1,2,3));
